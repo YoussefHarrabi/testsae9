@@ -1,0 +1,11 @@
+<h1>Liste des Campings</h1>
+<ul>
+  <li *ngFor="let camping of campings">
+    Nombre de places : {{ camping.nbPlace }} <br>
+    Description : {{ camping.description }}
+ <!-- Delete Button -->
+ <button (click)="deleteCamping(camping.id)">Supprimer</button>
+  <!-- Details Link -->
+  <a [routerLink]="['/campings', camping.id]">Détails</a>
+</li>
+</ul>

@@ -1,0 +1,6 @@
+<h1>Détails du Camping</h1>
+<div *ngIf="camping">
+  <p><strong>Nombre de places:</strong> {{ camping.nbPlace }}</p>
+  <p><strong>Description:</strong> {{ camping.description }}</p>
+</div>
+<a routerLink="/list-camping">Retour à la liste</a>
